@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PrimeiroApp</string>
+    <string name="vazio">Vazio</string>
+    <string name="local_detail_title">Detalhes do local</string>
 </resources>
