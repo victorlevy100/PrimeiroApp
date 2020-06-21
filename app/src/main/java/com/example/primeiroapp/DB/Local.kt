@@ -1,4 +1,4 @@
-package com.example.primeiroapp
+package com.example.primeiroapp.DB
 
 import android.os.Parcelable
 import androidx.room.Entity

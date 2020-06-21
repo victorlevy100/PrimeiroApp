@@ -1,10 +1,11 @@
-package com.example.primeiroapp
+package com.example.primeiroapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.primeiroapp.DB.Local
+import com.example.primeiroapp.R
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import kotlinx.android.synthetic.main.activity_local_detail.*
@@ -17,6 +18,7 @@ class LocalDetailActivity : AppCompatActivity() {
             tvDetailName.text = local.name
             val mapFragment =
                 supportFragmentManager.findFragmentById(R.id.mapFragment) as SupportMapFragment
+
             mapFragment.getMapAsync {
                 it.uiSettings.isZoomControlsEnabled = true
                 val latLng = LatLng(local.lat, local.lng)
