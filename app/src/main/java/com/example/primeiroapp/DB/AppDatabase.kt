@@ -15,6 +15,7 @@ abstract class AppDatabase : RoomDatabase() {
     companion object {
         fun getInstace(context: Context) =
             Room.databaseBuilder(context, AppDatabase::class.java, "local-db")
+                .allowMainThreadQueries()
                 .build()
     }
 

@@ -3,4 +3,7 @@
     <string name="vazio">Vazio</string>
     <string name="local_detail_title">Detalhes do local</string>
     <string name="title_activity_maps">Map</string>
+    <string name="ti_name">Nome</string>
+    <string name="ti_localization">Localização</string>
+    <string name="bt_ready">Adicionar</string>
 </resources>
